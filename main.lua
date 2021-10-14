@@ -1,6 +1,5 @@
 --[[
     COLORS:
-
     none = '\27[0m',
     black = '\27[0;30m',
     red = '\27[0;31m',
@@ -34,9 +33,9 @@ local money = 0
 local locations = {"Cave", "Town", "Mountain"}
 
 function status()
-    print("Your HP is: " .. health .. "/100")
-    print("Your food is: " .. food .. "/100")
-    print("Your money is: $" .. money)
+    print("Your \27[0;31mHP\27[0m is: \27[0;31m" .. health .. "\27[0m/\27[0;31m100\27[0m")
+    print("Your \27[1;33mfood\27[0m is: \27[1;33m" .. food .. "\27[0m/\27[1;33m100\27[0m")
+    print("Your \27[0;32mmoney\27[0m is: \27[0;32m$" .. money .. "\27[0m")
 end
 
 --loads food loop from food.lua
@@ -64,4 +63,4 @@ end
 print("\27[0;34mWelcome to my game! What would you like to do?\27[0m")
 location()
 
---Version 0.012
+--Version 0.015
