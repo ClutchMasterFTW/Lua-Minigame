@@ -4,6 +4,6 @@ function wait(seconds)
     repeat until os.time() > start + seconds
 end
 
-while food ~= 0 do
+--[[while food ~= 0 do
     
-end
+end]]
